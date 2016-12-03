@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="globallink">
-			<span class="nowpos">当前位置：首页>成绩学分>模块管理</span>
+			<span class="nowpos">当前位置：首页>成绩学分>成绩管理</span>
 			<span class="menulogo"><img src="images/menulogo.png"></span>
 			<div class="globalcontent" style="display: none;">
 				<dl>
@@ -17,7 +17,7 @@
 					<dt class="menutreefat">问题数据查看</dt>
 					<dd class="menutreeson">
 						<ul >
-							<li><a href="模块管理.html">模块设置问题</a></li>
+							<!--<li><a href="模块管理.html">模块设置问题</a></li>
 							<li><a href="毕业生综合素质信息表.html">模块设置问题处理</a></li>
 							<li><a href="成绩管理.html">重复修习问题</a></li>
 							<li><a href="教学班管理表格.html">重复修习问题处理</a></li>
@@ -26,6 +26,16 @@
 							<li><a href="模块管理新增.html">成绩学分问题处理</a></li>
 							<li><a href="学业水平情况记录表.html">获奖情况问题</a></li>
 							<li><a href="综合素养情况记录表.html">获奖情况问题处理</a></li>
+							<li><a href="##">获奖情况问题批量处理</a></li>-->
+							<li><a href="mkmana.html">模块设置问题</a></li>
+							<li><a href="bys.html">模块设置问题处理</a></li>
+							<li><a href="grade.html">重复修习问题</a></li>
+							<li><a href="jxbmana.html">重复修习问题处理</a></li>
+							<li><a href="jxb.html">重复修习问题批量处理</a></li>
+							<li><a href="jxblist.html">成绩学分问题</a></li>
+							<li><a href="mkadd.html">成绩学分问题处理</a></li>
+							<li><a href="xysp.html">获奖情况问题</a></li>
+							<li><a href="zhsy.html">获奖情况问题处理</a></li>
 							<li><a href="##">获奖情况问题批量处理</a></li>
 						</ul>
 					</dd>
@@ -110,38 +120,67 @@
 				</dl>
 			</div>
 		</div>
-		<div class="cjxf-table">
-			<table class="cjxf-table-top">
-				<tr>
-					<td>序号</td>
-					<td>模块代码</td>
-					<td>模块名称</td>
-					<td>模块简称</td>
-					<td>课程类型</td>
-					<td>学分</td>
-					<td>学分类型</td>
-					<td>授课方式</td>
-					<td class="mkgltable-cz">操作</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><input type="text" size="5"></td>
-					<td><input type="text" size="7"></td>
-					<td><input type="text" size="5"></td>
-					<td><input type="text" size="5"></td>
-					<td></td>
-					<td><input type="text" size="5"></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
-			<div class="mkgl-sj">
-				
+		<div class="jxbgllb-top">
+			<ul>
+				<li class="jxbgllb-top-bg">表格</li>
+				<li class="jxbgllb-top-lb">列表</li>
+			</ul>
+		</div>
+		<div class="jxbgllb-search">
+			学期：<select>			
+					<option>2016/2017学年上</option>
+					<option>2015/2016学年下</option>
+					<option>2015/2016学年上</option>
+					<option>2014/2015学年下</option>
+					<option>2014/2015学年上</option>
+					<option>2013/2014学年下</option>
+					<option>2013/2014学年上</option>
+					<option>2012/2013学年下</option>
+					<option>2012/2013学年上</option>
+			</select>
+		</div>
+		<div class="jxbgllb-main">
+			<div class="jxbgllb-main-left"></div>
+			<div class="jxbgllb-main-right">
+				<div class="jxbgllb-main-righttop">
+					<table>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>序号</td>
+							<td>模块名称</td>
+							<td>教学班名称</td>
+							<td>责任教师</td>
+							<td>学分</td>
+							<td>课程类型</td>
+							<td>学年</td>
+							<td>学期</td>
+							<td>人数</td>
+							<td>教学班来源</td>
+							<td>操作</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><input type="text" size="6"></td>
+							<td><input type="text" size="6"></td>
+							<td><input type="text" size="6"></td>
+							<td></td>
+							<td><input type="text" size="6"></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="jxbgllb-main-rightmain">
+					<!--放数据-->
+				</div>
 			</div>
 		</div>
-		<div class="mkgl-btn">
-				<input type="button" value="新增" class="allbtn"/>
-				<input type="button" value="导出" class="allbtn"/>
+		<div class="jxbgllb-btn">
+			
 		</div>
 		<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
 		<script type="text/javascript" src="js/autojs.js" ></script>
